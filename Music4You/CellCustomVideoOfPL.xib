@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="KGk-i7-Jjw" customClass="CellCustomVideoOfPL">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pPi-iV-NES">
+                        <rect key="frame" x="15" y="3" width="64" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="64" id="KQ3-Um-yxe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSJ-I6-1mm">
+                        <rect key="frame" x="87" y="8" width="225" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="OSJ-I6-1mm" secondAttribute="trailing" constant="8" id="CbT-tO-vaJ"/>
+                    <constraint firstItem="OSJ-I6-1mm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="LCB-FP-azS"/>
+                    <constraint firstItem="pPi-iV-NES" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="3" id="f73-RQ-pRw"/>
+                    <constraint firstItem="OSJ-I6-1mm" firstAttribute="leading" secondItem="pPi-iV-NES" secondAttribute="trailing" constant="8" id="mao-Yi-quu"/>
+                    <constraint firstAttribute="bottom" secondItem="pPi-iV-NES" secondAttribute="bottom" constant="3" id="vcl-bK-oTE"/>
+                    <constraint firstItem="pPi-iV-NES" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zFt-Il-QEo"/>
+                    <constraint firstAttribute="bottom" secondItem="OSJ-I6-1mm" secondAttribute="bottom" constant="8" id="zMk-R1-J6V"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageThumbnail" destination="pPi-iV-NES" id="E1d-87-udj"/>
+                <outlet property="lblNameVideo" destination="OSJ-I6-1mm" id="hSR-pS-Nft"/>
+            </connections>
+            <point key="canvasLocation" x="445" y="353"/>
+        </tableViewCell>
+    </objects>
+</document>
